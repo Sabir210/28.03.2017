@@ -1,0 +1,18 @@
+.row {
+	width:960px;
+	margin:0 auto;
+}
+.row>div{
+	border: 1px solid black;
+	float: left;
+	height: 150px;
+	width: calc(960px / 8);
+	box-sizing: border-box;
+}
+.row:nth-child(even)>div:nth-child(odd) {
+background: black;
+}
+
+.row:nth-child(odd)>div:nth-child(even){
+	background: black;
+}
